@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:wght@300&family=Nunito+Sans:wght@200&display=swap');
+
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* RESPONSIVE */
+/* Movile First */
+/* fffff */
+
+#contenedor-grid-index{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "videx"
+    "nindex1"
+    "pindex1"
+    "nindex2"
+    "footer";
+}
+
+#contenedor-grid-rutinas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nota"
+    "nota1"
+    "nota2"
+    "video"
+    "aside"
+    "publi"
+    "publi1"
+    "footer";
+}
+
+
+/* COLOR DE FONDO PRUEBA https://codepen.io/byrass/pen/JYrxLX
+body {
+    background: 
+    linear-gradient(135deg, #DCDCDC 25%, transparent 25%) -50px 0,
+    linear-gradient(225deg, #DCDCDC 25%, transparent 25%) -50px 0,
+    linear-gradient(315deg, #DCDCDC 25%, transparent 25%),
+    linear-gradient(45deg, #DCDCDC 25%, transparent 25%);	
+    background-size: 2em 2em;
+    background-color: #FFFFFF;
+  }
+  */
+  
+
+/*etiquetas de tipografia*/
+
+.fontMerri{
+    font-family: 'Merriweather', serif;
+}
+    
+.fontNunito{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.fontDancing{
+    font-family: 'Dancing Script', cursive;
+}
+
+/*etiquetas fondo color*/
+
+.bgTierra{
+    background-color: rgb(170, 170, 170);
+}
+
+.bgVerdeOscuro{
+    background-color: rgb(96,171,174);
+}
+
+.bgVerdeApagado{
+    background-color: rgb(159,204,206);
+}
+
+.bgVerdeManzana{
+    background-color: rgb(183,210,81);
+}
+
+.bgBlanco{
+    background-color:rgb(255,255,255);
+}
+
+
+/*etiquetas font size*/
+
+.tp-small{
+    font-size: 0.8rem;
+}
+
+.tp-medium{
+    font-size: 1rem;
+}
+
+.tp-large{
+    font-size: 2rem;
+}
+
+.w25{
+    width: 25%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.w75{
+    width: 75%;
+}
+
+.w95{
+    width: 95%;
+}
+
+.w100{
+    width: 100%;
+}
+
+.containerEncabezado{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.propag{
+    width: 40%;
+    height: auto;
+    top: 30px;
+    left: 1500px;
+}
+
+.notasDeInteres{
+    width: 70%;
+    height: auto;
+    margin: 30px 40px 30px 10px;
+    padding: 20px;
+    border: #9fccce solid 3px;
+    background-color: rgb(255,255,255);
+    line-height: 2rem;
+}
+
+.listaNavegacion{
+    background-color: #60abae;
+    text-align: center;
+    font-family: 'Merriweather', serif;     
+}
+
+
+
+/* etiquetas footer */
+
+.container-footer{
+    margin: 25px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+footer{
+    width: 100%;
+    background: linear-gradient(to top, rgb(183,210,81),rgb(96,171,174));
+    padding: auto;
+}
+
+.redes{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 2rem 1rem 2rem;
+    text-decoration: none;
+}
+
+.redes li{
+        margin: 0 10px;
+}
+
+header div p{
+    font-family: 'Dancing Script', cursive;
+    font-size: 60px;
+    color: #ffffff;
+    padding: 30px;
+    
+}
+
+.redes a i{
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.redes a:hover i{
+    color: #b7d251;
+    font-size: 4rem;
+}
+
+.bordeFormulario{
+    border-color: aqua;
+}
+
+
+/* etiquetas de bloque */
+
+.headerIndex{
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.scale:hover{
+    transform:scale(1.2);
+    cursor: pointer;
+    transition: transform 2s;
+}
+
+
+.flexGrow1{
+    flex-grow: 1;
+}
+
+.flexGrow5{
+    flex-grow: 5;
+    text-align: right;
+}
+
+.containerIntroHojas{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+}
+
+.checkFormulario{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    }
+
+h2{
+    font-family: 'Merriweather', serif;
+    color: rgb(96,171,174);
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.8rem;
+}
+
+h3{
+    font-family: 'Merriweather', serif;
+    color: #f1f1f1;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+h4{
+    font-family: 'Nunito Sans', sans-serif;
+    color: black;
+    font-size:0.8rem;
+    text-align: center;
+}
+
+h5{
+    font-family:'Dancing Script', cursive;
+    font-size: 3rem;
+    color:rgb(170, 170, 170)
+}
+
+p{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.1rem;
+}
+
+div section article p{
+    color: black;
+}
+
+div form fieldset p{
+    color: cornsilk;
+}
+
+
+
+header nav ul li a:hover{
+text-transform: uppercase;
+color: #353c1d;
+}
+
+main{
+    padding:0%;
+    margin: 0px;
+    width: 100%;
+    line-height: 2rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+
+
+.formulario{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+
+/* ETIQUETAS DE NOSOTROS */
+
+.notasDeNosotros{
+    width: 90%;
+    justify-content: center;
+    margin: 30px 40px 30px 40px;
+    padding: 20px;
+    border:#b7d251 solid 5px;
+    background-color: #9fccce
+}
+
+.containerAddress{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;   
+   
+}
+
+address div h3{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+/* ETIQUETAS DE INDEX */
+
+.headerIndex{
+    align-items: center;
+    text-align: center;
+    
+}
+
+.containerArticulosIndex{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid #b7d251;
+    background-color: #ffffff;
+    align-content: center;
+    justify-content: baseline;
+}
+
+
+
+
+/* ---ETIQUETAS DE COCINA---*/
+
+.containerVideosRecetas{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #aaaaaa;
+}
+
+.iframeRecetas{
+    padding: 5px;
+}
+
+.containerRecetasCocina{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: rgb(159,204,206); 
+    align-items: center;
+    justify-content: center;
+}
+
+.boxRecetasCocina{
+   
+ width: 16.5%;
+ Padding: 10px;
+}
+
+.tituloRecetas{
+    padding: 30px;
+    background-color: #ffffff;
+}
+
+
+/* ---ETIQUETAS RUTINA ----*/
+.containerVideoRutina{
+    margin: 10px;
+    border: 4px solid #b7d251;
+    padding: 5px;
+}
+
+.containerArticulos{
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid #b7d251;
+    background-color: #ffffff;
+    align-content: center;
+    justify-content: baseline;
+}
+
+.containerPubli{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid #b7d251;
+    background-color: rgb(159,204,206);
+    justify-items: center;
+    align-items: center;
+}
+
+.containerAsideRutinas{
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid #b7d251;
+    background-color: #ffffff;
+}
+
+/* GRID RUTINAS */
+
+#header{
+    grid-area: header;
+}
+#nota{
+    grid-area: nota;
+}
+
+#videos{
+    grid-area: video;
+}
+
+#nota1{
+    grid-area: nota1;
+}
+
+#publicidad{
+    grid-area: publi;
+}
+
+#publicidad1{
+    grid-area: publi1;
+}
+
+#aside{
+    grid-area: aside;
+}
+
+#nota2{
+    grid-area: nota2;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+
+
+/* Etiquetas Grid de Rutina */
+
+@media (min-width:768px){
+#contenedor-grid-rutinas{
+    display: grid;
+    grid-template-columns: 65vw 35vw;
+    grid-template-areas: 
+    "nota aside"
+    "nota1 aside"
+    "video nota2"
+    "publi1 publi"
+    "footer footer";
+}
+}
+
+@media (min-width:1024px) {
+#contenedor-grid-rutinas{
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4,auto);
+    height: auto;
+    column-gap: 3px;
+    row-gap: 3px;
+    justify-content: center;
+    grid-template-areas:
+    "video  nota nota nota aside"
+    "publi nota1 nota1 nota1 aside"
+    "publi1 nota1 nota1 nota1 aside"
+    "nota2 nota2 nota2 nota2 aside"
+}
+}
+
+/* Etiquetas grid de Index */
+
+
+#video-index{
+    grid-area: vindex;
+}
+
+#nota1-index{
+    grid-area: nindex1;
+}
+
+#nota2-index{
+    grid-area: nindex2;
+}
+
+#publi1-index{
+    grid-area: pindex1;
+}
+
+#publi2-index{
+    grid-area: pindex2;
+}
+
+@media (min-width:768px){
+    #contenedor-grid-index{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "videx videx"
+        "nindex1 nindex1"
+        "nindex2 pindex1";
+    }
+    }
+    
+    @media (min-width:1024px){
+    #contenedor-grid-index{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        height: auto;
+        column-gap: 3px;
+        row-gap: 3px;
+        justify-content: center;
+        grid-template-areas:
+        "vindex vindex vindex vindex"
+        "nindex1 nindex1 nindex1 nindex1"
+        "nindex2 nindex2 nindex2 pindex1"
+        "nindex2 nindex2 nindex2 pindex1";
+    }
+    }
+
+    @media (max-width:767px){
+    #ocultar{
+        visibility: hidden;
+    }
+    }
+
+
+    /* responsive de recetas */
+    @media (min-width:1024px){
+    #containerVideosRecetas{
+flex-direction: column;
+    }
+        
+    }
