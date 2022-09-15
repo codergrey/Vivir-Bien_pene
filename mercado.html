@@ -7,87 +7,153 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Bootstrap CSS -->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
     <title>Vivir Bien</title>
     <script src="https://kit.fontawesome.com/a6701b4867.js" crossorigin="anonymous"></script>
     <link rel="shorcut icon" href="img/Favicom.png"tipe "image/x-icon">
-    <Link rel="stylesheet" href="css/style.css">
+    <Link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-  <header>
-    <section class="bgVerdeManzana containerIntroHojas">
-        <div class="w25 flexGrow1"><a href="index.html"><img src="img/logo nuevo.png" alt="Logo de Vivir Bien" width="120px"></a></div>
-        <div class="w75 flexGrow5"><p>Mercado Saludable</p></div>
-    </section>
-    
-    <nav class="navbar navbar-expand-lg navbar-light bgVerdeOscuro">
-        <div class="container-fluid">
-          
+    <body class="bodyMercado">
+      <header>
+        <section class="bgVerdeManzana containerIntroHojas">
+            <div class="w25 flexGrow1"><a href="index.html"><img src="img/logo nuevo.png" alt="Logo de Vivir Bien" width="120px"></a></div>
+            <div class="w75 flexGrow5"><p id="ocultar">Mercado Saludable</p></div>
+        </section>
+        
+        <nav id="centrar" class="navbar navbar-expand-lg navbar-light bgVerdeOscuro">
+            <div class="container-fluid">
+              
 
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="movimiento.html">Movimiento</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="rutinas.html">Rutinas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="cocina.html">Cocina</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="mercado.html">Mercado</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="movimiento.html">Movimiento</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="rutinas.html">Rutinas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cocina.html">Cocina</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="mercado.html">Mercado</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="nosotros.html">Nosotros</a>
 
-              </li>
+                  </li>
+                </div>
+            </div>
+          </nav>   
+        </header>
+
+        <div>
+        <main>
+            <h1>Encuentra aqui todo lo necesario para alcanzar tu Bienestar</h1>
+            <p>Conoce las herramientas para lograr una vida plena, en armonía con el universo</p>
+        </main>
+        </div>
+
+    <!-- COMIENZA CATALOGO -->
+
+        <div class="container">
+            <div class="card">
+                  <img src="img/mercado/aromas.jpg" alt="Asesoria de Aromaterapia">
+                  <p>Asesoria Online de Aromaterapia (40 minutos)</p>
+                  <h4>$ 1.800</h4>
+            </div>
+            <div class="card">
+                <img src="img/mercado/Curso_reiki.jpg" alt="Curso Online de Reiki">
+                <p>Curso Introductorio al Reiki</p>
+                <p>6 clases</p>
+                <h4>$ 1750</h4>
+            </div>
+            <div class="card">
+                <img src="img/mercado/curso_rutinas.jpg" alt="Curso Online de Rutinas Saludables">
+                <p>Curso Online de rutinas Saludables</p>
+                <p>4 clases</p>
+                <h4>$ 1.200</h4>
+            </div>
+            <div class="card">
+                <img src="img/mercado/yoga_principiante.jpg" alt="Curso Online Yoga Principiantes">
+                <p>Curso Online de Yoga para Principiantes</p>
+                <p>Incluye 8 clases</p>
+                <h4>$ 2500</h4>
+            </div>
+            <div class="card">
+                <img src="img/mercado/yoga_avanzado.jpg" alt="Curso Online de Yoga Avanzado">
+                <p>Curso Online de Yoga Avanzado</p>
+                <p>Incluye 8 clases</p>
+                <h4>$ 2700</h4>
+            </div>
+            <div class="card">
+                <img src="img/mercado/meditacion.jpg" alt="Curso Online de Meditación Guiada">
+                <p>Curso Online de Meditación</p>
+                <p>Incluye 8 clases</p>
+                <h4>$ 2700</h4>
+            </div>
+            <div class="card">
+                <img src="img/mercado/asesoria_alimentaria.jpg" alt="Asesoria Online de Alimentación Saludable">
+                <p>Asesoria Online de Alimentación Saludable</p>
+                <p>(40 minutos)</p>
+                <h4>$ 2700</h4>
+            </div>
+            <div class="card">
+                <img src="img/mercado/Ases_salud.jpg" alt="Asesoria Online Salud Integrativa">
+                <p>Asesoria Online Salud Integrativa</p>
+                <p>(40 minutos)</p>
+                <h4>$ 2700</h4>
+            </div>
+            <div class="card">
+                <img src="img/mercado/Asesoria_ayurveda.jpg" alt="Asesoria Online Ayurveda">
+                <p>Asesoria Online Ayurveda</p>
+                <p>(40 minutos)</p>
+                <h4>$ 2700</h4>
+            </div>
+            <div class="card">
+                <img src="img/mercado/libro1.jpg" alt="Libro inteligencia para el Bienestar">
+                <p>E-book inteligencia para el Bienestar</p>
+                <p>de Pablo Hirsch</p>
+                <h4>$ 3.300</h4>
+            </div>
+            <div class="card">
+                <img src="img/mercado/libro 2.jpg" alt="Libro el Lado B de Pablo Siracusa">
+                <p>E-book el Lado B del Bienestar </p>
+                <p>de Pablo Siracusa</p>
+                <h4>$ 2.700</h4>
+            </div>
+            <div class="card">
+                <img src="img/mercado/libro3.jpg" alt="Libro Belleza Radical">
+                <p>E-book Belleza Radical</p>
+                <p>de Deepak Chopra</p>
+                <h4>$ 3.100</h4>
             </div>
         </div>
-      </nav>   
-    </header>
-    <div>
-
-    <main>
-        <h1>Encuentra aqui todo lo necesario para alcanzar tu Bienestar</h1>
-        <p>Existe evidencia sólida que demuestra que comer una dieta saludable puede reducir su riesgo de obesidad y enfermedades tales como diabetes, cardiopatía, accidentes cerebrovasculares, osteoporosis y algunos tipos de cáncer.</p>
-    </main>
-    
-<!-- NOTAS DE INTERES -->
-       
-<!-- PUBLICIDAD -->
-            <aside class="propag">
-                <img class="propag" src="img/itzel.jpg" alt="Publicidad Aceite de la India con enlace al sitio">
-                <a href="https://www.itzelinsumos.com.ar/MLA-1146036014-aceite-esencial-menta-arvensis-puro-100-natural-x-10ml-_JM?utm_source=google&utm_medium=cpc&utm_campaign=darwin_ss"Insumos itze"></a>
-                
-                <img class="propag" src="img/Aroquin.jpg" alt="Publicidad de Aromas Aroquin">
-                <a href="https://www.aroquim.com.ar/">Aroquin</a>
-            </aside>
-
-        </section>
-
-    </div>
-<!-- FORMULARIO -->
-   
-    </div>
+    </body>
+</html>
+ 
+<!-- TERMINA CATALOGO -->
 
 <!--PIE DE PAGINA-->
-    <footer>
-        <div class="container-footer">
-            <h3>Seguinos</h3>
-            <ul class="redes">
-                <li><a href="https://www.instagram.com/maismaalmacensaludable/?hl=es"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/maismaalmacensaludable/"><i class="fa-brands fa-facebook"></i></a></li> 
-                <li><a href="https://www.youtube.com/c/BiiAlab"><i class="fa-brands fa-youtube"></i></a></li>
+<footer class="container-footer">
+    <div  >
+        <h3>Seguinos</h3>
+        <ul class="redes">
+            <li><a href="https://www.instagram.com/maismaalmacensaludable/?hl=es"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/maismaalmacensaludable/"><i class="fa-brands fa-facebook"></i></a></li> 
+            <li><a href="https://www.youtube.com/c/BiiAlab"><i class="fa-brands fa-youtube"></i></a></li>
+            
+    </div>
+   <hr>
+    <h4>Copyrigth 2022 - Grace </h4>
+</footer>
+<!-- FIN PIE DE PAGINA -->
 
-        </div>
-        <hr>
-        <h4>Copyrigth 2022 - Grace </h4>
-                      
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>

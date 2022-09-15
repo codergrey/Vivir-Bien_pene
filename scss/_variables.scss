@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:wght@300&family=Nunito+Sans:wght@200&display=swap');
+
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+//variables de color
+$colorprimario: #60abae;
+$colorsecundario: #9fccce;
+$colorheader: #b7d251;
+$colorblanco: #ffffff;
+
+//variables de tipografía
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:wght@300&family=Nunito+Sans:wght@200&display=swap');
+$font-p: 'Nunito Sans', sans-serif;
+$font-subtitle: 'Merriweather', serif;
+$font-title: 'Dancing Script', cursive;
+
+$textXlg: 4em;
+$textLg: 3em;
+$textMd: 2em;
+$textSm: 1.2em; 
+$textXsm:0.8em;
+
+$textBold:600;
+$textRegular: 400;
+$textThin:200;
+
+/*etiquetas de tipografia*/
+
+.fontMerri{
+    font-family: $font-subtitle;
+}
+    
+.fontNunito{
+    font-family: $font-p;
+}
+
+.fontDancing{
+    font-family: $font-title;
+}
+
+/*etiquetas fondo color*/
+
+.bgTierra{
+    background-color: rgb(170, 170, 170);
+}
+
+.bgVerdeOscuro{
+    background-color: rgb(96,171,174);
+}
+
+.bgVerdeApagado{
+    background-color: rgb(159,204,206);
+}
+
+.bgVerdeManzana{
+    background-color: rgb(183,210,81);
+}
+
+.bgBlanco{
+    background-color:rgb(255,255,255);
+}
+
+
+/*etiquetas font size*/
+
+.tp-small{
+    font-size: 0.8rem;
+}
+
+.tp-medium{
+    font-size: 1rem;
+}
+
+.tp-large{
+    font-size: 2rem;
+}
+
+.w25{
+    width: 25%;
+}
+
+.w50{
+    width: 50%;
+}
+
+.w75{
+    width: 75%;
+}
+
+.w95{
+    width: 95%;
+}
+
+.w100{
+    width: 100%;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    }
+
+h2{
+    font-family: 'Merriweather', serif;
+    color: rgb(96,171,174);
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 1.8rem;
+}
+
+h3{
+    font-family: 'Merriweather', serif;
+    color: #f1f1f1;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+h4{
+    font-family: $font-p;
+    color: black;
+    font-size:$textXsm;
+    text-align: center;
+}
+
+h5{
+    font-family: $font-title;
+    font-size: $textLg;
+    color:rgb(170, 170, 170)
+}
+
+p{
+    font-family: $font-p;
+    font-size: $textSm;
+}

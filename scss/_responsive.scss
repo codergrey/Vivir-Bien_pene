@@ -1,0 +1,164 @@
+#contenedor-grid-index{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "videx"
+    "nindex1"
+    "pindex1"
+    "nindex2"
+    "footer";
+}
+
+#contenedor-grid-rutinas{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "nota"
+    "nota1"
+    "nota2"
+    "video"
+    "aside"
+    "publi"
+    "publi1"
+    "footer";
+}
+
+
+/* GRID RUTINAS */
+
+#header{
+    grid-area: header;
+}
+#nota{
+    grid-area: nota;
+}
+
+#videos{
+    grid-area: video;
+}
+
+#nota1{
+    grid-area: nota1;
+}
+
+#publicidad{
+    grid-area: publi;
+}
+
+#publicidad1{
+    grid-area: publi1;
+}
+
+#aside{
+    grid-area: aside;
+}
+
+#nota2{
+    grid-area: nota2;
+}
+
+#footer{
+    grid-area: footer;
+}
+
+
+
+/* Etiquetas Grid de Rutina */
+
+@media (min-width:768px){
+#contenedor-grid-rutinas{
+    display: grid;
+    grid-template-columns: 65vw 35vw;
+    grid-template-areas: 
+    "nota aside"
+    "nota1 aside"
+    "video nota2"
+    "publi1 publi"
+    "footer footer";
+}
+}
+
+@media (min-width:1024px) {
+#contenedor-grid-rutinas{
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4,auto);
+    height: auto;
+    column-gap: 3px;
+    row-gap: 3px;
+    justify-content: center;
+    grid-template-areas:
+    "video  nota nota nota aside"
+    "publi nota1 nota1 nota1 aside"
+    "publi1 nota1 nota1 nota1 aside"
+    "nota2 nota2 nota2 nota2 aside"
+}
+}
+
+/* Etiquetas grid de Index */
+
+
+#video-index{
+    grid-area: vindex;
+}
+
+#nota1-index{
+    grid-area: nindex1;
+}
+
+#nota2-index{
+    grid-area: nindex2;
+}
+
+#publi1-index{
+    grid-area: pindex1;
+}
+
+#publi2-index{
+    grid-area: pindex2;
+}
+
+@media (min-width:768px){
+    #contenedor-grid-index{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 
+        "videx videx"
+        "nindex1 nindex1"
+        "nindex2 pindex1";
+    }
+    }
+    
+    @media (min-width:1024px){
+    #contenedor-grid-index{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        height: auto;
+        column-gap: 3px;
+        row-gap: 3px;
+        justify-content: center;
+        grid-template-areas:
+        "vindex vindex vindex vindex"
+        "nindex1 nindex1 nindex1 nindex1"
+        "nindex2 nindex2 nindex2 pindex1"
+        "nindex2 nindex2 nindex2 pindex1";
+    }
+    }
+
+    @media (max-width:664px){
+    #ocultar{
+       font-size:2rem;
+    }
+    }
+
+    /* responsive de recetas */
+    @media (max-width:1024px){
+    #containerRecetas{
+    flex-direction: column;
+    }
+    #containerAddress{
+    flex-direction: column;
+    text-align: center;
+    }
+    }

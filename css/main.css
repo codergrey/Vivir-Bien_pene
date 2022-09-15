@@ -1,0 +1,525 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:wght@300&family=Nunito+Sans:wght@200&display=swap");
+/* Reset */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:wght@300&family=Nunito+Sans:wght@200&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/*etiquetas de tipografia*/
+.fontMerri {
+  font-family: "Merriweather", serif;
+}
+
+.fontNunito {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.fontDancing {
+  font-family: "Dancing Script", cursive;
+}
+
+/*etiquetas fondo color*/
+.bgTierra {
+  background-color: rgb(170, 170, 170);
+}
+
+.bgVerdeOscuro {
+  background-color: rgb(96, 171, 174);
+}
+
+.bgVerdeApagado {
+  background-color: rgb(159, 204, 206);
+}
+
+.bgVerdeManzana {
+  background-color: rgb(183, 210, 81);
+}
+
+.bgBlanco {
+  background-color: rgb(255, 255, 255);
+}
+
+/*etiquetas font size*/
+.tp-small {
+  font-size: 0.8rem;
+}
+
+.tp-medium {
+  font-size: 1rem;
+}
+
+.tp-large {
+  font-size: 2rem;
+}
+
+.w25 {
+  width: 25%;
+}
+
+.w50 {
+  width: 50%;
+}
+
+.w75 {
+  width: 75%;
+}
+
+.w95 {
+  width: 95%;
+}
+
+.w100 {
+  width: 100%;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+
+h2 {
+  font-family: "Merriweather", serif;
+  color: rgb(96, 171, 174);
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+h3 {
+  font-family: "Merriweather", serif;
+  color: #f1f1f1;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+h4 {
+  font-family: "Nunito Sans", sans-serif;
+  color: black;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+h5 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3em;
+  color: rgb(170, 170, 170);
+}
+
+p {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.2em;
+}
+
+#contenedor-grid-index {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "videx" "nindex1" "pindex1" "nindex2" "footer";
+}
+
+#contenedor-grid-rutinas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nota" "nota1" "nota2" "video" "aside" "publi" "publi1" "footer";
+}
+
+/* GRID RUTINAS */
+#header {
+  grid-area: header;
+}
+
+#nota {
+  grid-area: nota;
+}
+
+#videos {
+  grid-area: video;
+}
+
+#nota1 {
+  grid-area: nota1;
+}
+
+#publicidad {
+  grid-area: publi;
+}
+
+#publicidad1 {
+  grid-area: publi1;
+}
+
+#aside {
+  grid-area: aside;
+}
+
+#nota2 {
+  grid-area: nota2;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+/* Etiquetas Grid de Rutina */
+@media (min-width: 768px) {
+  #contenedor-grid-rutinas {
+    display: grid;
+    grid-template-columns: 65vw 35vw;
+    grid-template-areas: "nota aside" "nota1 aside" "video nota2" "publi1 publi" "footer footer";
+  }
+}
+@media (min-width: 1024px) {
+  #contenedor-grid-rutinas {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, auto);
+    height: auto;
+    -moz-column-gap: 3px;
+         column-gap: 3px;
+    row-gap: 3px;
+    justify-content: center;
+    grid-template-areas: "video  nota nota nota aside" "publi nota1 nota1 nota1 aside" "publi1 nota1 nota1 nota1 aside" "nota2 nota2 nota2 nota2 aside";
+  }
+}
+/* Etiquetas grid de Index */
+#video-index {
+  grid-area: vindex;
+}
+
+#nota1-index {
+  grid-area: nindex1;
+}
+
+#nota2-index {
+  grid-area: nindex2;
+}
+
+#publi1-index {
+  grid-area: pindex1;
+}
+
+#publi2-index {
+  grid-area: pindex2;
+}
+
+@media (min-width: 768px) {
+  #contenedor-grid-index {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "videx videx" "nindex1 nindex1" "nindex2 pindex1";
+  }
+}
+@media (min-width: 1024px) {
+  #contenedor-grid-index {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    height: auto;
+    -moz-column-gap: 3px;
+         column-gap: 3px;
+    row-gap: 3px;
+    justify-content: center;
+    grid-template-areas: "vindex vindex vindex vindex" "nindex1 nindex1 nindex1 nindex1" "nindex2 nindex2 nindex2 pindex1" "nindex2 nindex2 nindex2 pindex1";
+  }
+}
+@media (max-width: 664px) {
+  #ocultar {
+    font-size: 2rem;
+  }
+}
+/* responsive de recetas */
+@media (max-width: 1024px) {
+  #containerRecetas {
+    flex-direction: column;
+  }
+  #containerAddress {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+header div p {
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  color: #ffffff;
+  padding: 30px;
+}
+
+.containerEncabezado {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.notasDeInteres {
+  width: 70%;
+  height: auto;
+  margin: 30px 40px 30px 10px;
+  padding: 20px;
+  border: #9fccce solid 3px;
+  background-color: rgb(255, 255, 255);
+  line-height: 2rem;
+}
+
+/* etiquetas de bloque */
+.headerIndex {
+  align-items: center;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.scale:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  transition: transform 2s;
+}
+
+.flexGrow1 {
+  flex-grow: 1;
+}
+
+.flexGrow5 {
+  flex-grow: 5;
+  text-align: right;
+}
+
+.containerIntroHojas {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.checkFormulario {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+div section article p {
+  color: black;
+}
+
+main {
+  padding: 0%;
+  margin: 0px;
+  width: 100%;
+  line-height: 2rem;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.formulario {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+/* ETIQUETAS DE NOSOTROS */
+.contenedorNosotros {
+  padding: 20px;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.notasDeNosotros {
+  width: 100%;
+  margin: 25px 0 25px 0;
+  padding: 20px;
+  border: #b7d251 solid 4px;
+  background-color: #9fccce;
+}
+
+.containerAddress {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+address div h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+
+/* ETIQUETAS DE INDEX */
+.headerIndex {
+  align-items: center;
+  text-align: center;
+}
+
+.containerArticulosIndex {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 10px;
+  border: 4px solid #b7d251;
+  background-color: #ffffff;
+  align-content: center;
+  justify-content: baseline;
+}
+
+/* ---ETIQUETAS DE COCINA---*/
+.containerVideosRecetas {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #aaaaaa;
+}
+
+.iframeRecetas {
+  padding: 5px;
+}
+
+.containerRecetasCocina {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: rgb(159, 204, 206);
+  align-items: center;
+  justify-content: center;
+}
+
+.boxRecetasCocina {
+  width: 30%;
+  Padding: 10px;
+}
+
+.tituloRecetas {
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+/* ETIQUETAS MERCADO */
+.bodyMercado {
+  width: 100%;
+  height: 100%;
+  font-family: "Nunito Sans", sans-serif;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  font-family: "Merriweather", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  text-align: center;
+}
+
+.container .card {
+  width: 330px;
+  height: 400px;
+  border-radius: 9px;
+  box-shadow: 0 4px 4px #60abae;
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.25s;
+}
+
+.container .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img {
+  width: 220px;
+  height: auto;
+}
+
+.container .card h4 {
+  font-family: "Merriweather", serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.container .card p {
+  font-family: "Nunito Sans", sans-serif;
+  padding: 0 2rem;
+  font-size: 16px;
+}
+
+/* ---ETIQUETAS RUTINA ----*/
+.containerVideoRutina {
+  margin: 10px;
+  border: 4px solid #b7d251;
+  padding: 5px;
+}
+
+.containerArticulos {
+  padding: 10px;
+  margin: 10px;
+  border: 4px solid #b7d251;
+  background-color: #ffffff;
+  align-content: center;
+  justify-content: baseline;
+}
+
+.containerPubli {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  border: 4px solid #b7d251;
+  background-color: rgb(159, 204, 206);
+  justify-items: center;
+  align-items: center;
+}
+
+.containerAsideRutinas {
+  padding: 10px;
+  margin: 10px;
+  border: 4px solid #b7d251;
+  background-color: #ffffff;
+}
+
+header nav ul li a:hover {
+  text-transform: uppercase;
+  color: #353c1d;
+}
+
+/* etiquetas footer */
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: linear-gradient(to top, #b7d251, #60abae);
+}
+
+.redes {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 2rem 1rem 2rem;
+  text-decoration: none;
+}
+.redes li {
+  margin: 0 10px;
+}
+.redes li a i {
+  font-size: 3em;
+  color: #ffffff;
+  padding: 10px;
+}
+
+.redes a:hover i {
+  color: #b7d251;
+  font-size: 4rem;
+}/*# sourceMappingURL=main.css.map */

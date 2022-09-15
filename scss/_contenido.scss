@@ -1,0 +1,253 @@
+header div p{
+    font-family:$font-title;
+    font-size: 60px;
+    color:$colorblanco;
+    padding: 30px;
+}
+.containerEncabezado{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.notasDeInteres{
+    width: 70%;
+    height: auto;
+    margin: 30px 40px 30px 10px;
+    padding: 20px;
+    border: $colorsecundario solid 3px;
+    background-color: $colorblanco;
+    line-height: 2rem;
+}
+
+/* etiquetas de bloque */
+
+.headerIndex{
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.scale:hover{
+    transform:scale(1.2);
+    cursor: pointer;
+    transition: transform 2s;
+}
+
+.flexGrow1{
+    flex-grow: 1;
+}
+
+.flexGrow5{
+    flex-grow: 5;
+    text-align: right;
+}
+
+.containerIntroHojas{
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+}
+
+.checkFormulario{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div section article p{
+    color: black;
+}
+
+main{
+    padding:0%;
+    margin: 0px;
+    width: 100%;
+    line-height: 2rem;
+    text-align: center;
+    background-color: $colorblanco;
+}
+
+.formulario{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+
+/* ETIQUETAS DE NOSOTROS */
+.contenedorNosotros{
+    padding: 20px;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.notasDeNosotros{
+    width: 100%;
+    margin: 25px 0 25px 0;
+    padding: 20px;
+    border:$colorheader solid 4px;
+    background-color: $colorsecundario
+    
+}
+
+.containerAddress{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+
+address div h3{
+    font-family: $font-p;
+    font-size: 2rem;
+}
+
+/* ETIQUETAS DE INDEX */
+
+.headerIndex{
+    align-items: center;
+    text-align: center;
+}
+
+.containerArticulosIndex{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid $colorheader;
+    background-color: $colorblanco;
+    align-content: center;
+    justify-content: baseline;
+}
+
+/* ---ETIQUETAS DE COCINA---*/
+
+.containerVideosRecetas{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #aaaaaa;
+}
+
+.iframeRecetas{
+    padding: 5px;
+}
+
+.containerRecetasCocina{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background-color: $colorsecundario; 
+    align-items: center;
+    justify-content: center;
+}
+
+.boxRecetasCocina{
+ width: 30%;
+ Padding: 10px;
+}
+
+.tituloRecetas{
+    padding: 30px;
+    background-color:$colorblanco;
+}
+
+/* ETIQUETAS MERCADO */
+
+.bodyMercado{
+    width: 100%;
+    height: 100%;
+    font-family: $font-p;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    font-family:$font-subtitle; 
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    text-align: center
+}
+
+.container .card{
+    width: 330px;
+    height: 400px;
+    border-radius: 9px;
+    box-shadow: 0 4px 4px #60abae;
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.25s;
+}
+
+.container .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.container .card img{
+    width: 220px;
+    height: auto;
+}
+
+.container .card h4{
+    font-family: $font-subtitle;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.container .card p{
+    font-family: $font-p;
+    padding: 0 2rem;
+    font-size: 16px;
+}
+
+
+/* ---ETIQUETAS RUTINA ----*/
+.containerVideoRutina{
+    margin: 10px;
+    border: 4px solid #b7d251;
+    padding: 5px;
+}
+
+.containerArticulos{
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid #b7d251;
+    background-color: #ffffff;
+    align-content: center;
+    justify-content: baseline;
+}
+
+.containerPubli{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid #b7d251;
+    background-color: rgb(159,204,206);
+    justify-items: center;
+    align-items: center;
+}
+
+.containerAsideRutinas{
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid #b7d251;
+    background-color: #ffffff;
+}
+

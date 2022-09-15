@@ -10,14 +10,14 @@
     <title>Vivir Bien</title>
     <script src="https://kit.fontawesome.com/a6701b4867.js" crossorigin="anonymous"></script>
     <link rel="shorcut icon" href="img/Favicom.png"tipe "image/x-icon">
-    <Link rel="stylesheet" href="css/style.css">
+    <Link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <header>
     <section class="bgVerdeManzana containerIntroHojas">
         <div class="w25 flexGrow1"><a href="index.html"><img src="img/logo nuevo.png" alt="Logo de Vivir Bien" width="120px"></a></div>
-        <div class="w75 flexGrow5"><p>Nosotros</p></div>
+        <div class="w75 flexGrow5"><p id="ocultar">Nosotros</p></div>
     </section>
     
     <nav class="navbar navbar-expand-lg navbar-light bgVerdeOscuro">
@@ -36,7 +36,7 @@
                 <a class="nav-link" href="rutinas.html">Rutinas</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="ocina.html">Cocina</a>
+                <a class="nav-link" href="cocina.html">Cocina</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="mercado.html">Mercado</a>
@@ -52,17 +52,21 @@
     <div>
 
 <!-- INFO GENERAL -->
-    <Section class="notasDeNosotros">
+    <Section class="contenedorNosotros">
+      <div class="notasDeNosotros">
         <h2>Nuestra Visión</h2>
         <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius sint laboriosam neque voluptatibus nisi aliquid nostrum laborum qui doloremque dolore praesentium quis sequi quisquam iure vero facere ducimus, dolores aperiam.</p>
+      </div>
+      <div class="notasDeNosotros">
         <h2>Nuestra Misión</h2>
         <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius sint laboriosam neque voluptatibus nisi aliquid nostrum laborum qui doloremque dolore praesentium quis sequi quisquam iure vero facere ducimus, dolores aperiam.</p>
-    </Section>
+      </div>
+      </Section>
     <hr>
       
 <!-- DATOS DE CONTACTO -->
    
-    <address class="containerAddress">
+    <address id="containerAddress" class="containerAddress">
         <div>
             <h5>Comunicate con nosotros:</h5>
             <p>Domicilio: Maipú 620 - Ciudad Autónoma Buenos Aires</p>
@@ -78,19 +82,19 @@
 
 
 <!--PIE DE PAGINA-->
-    <footer>
-        <div class="container-footer">
-            <h3>Nuestras redes</h3>
-            <ul class="redes">
-                <li><a href="https://www.instagram.com/maismaalmacensaludable/?hl=es"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="https://www.facebook.com/maismaalmacensaludable/"><i class="fa-brands fa-facebook"></i></a></li> 
-                <li><a href="https://www.youtube.com/c/BiiAlab"><i class="fa-brands fa-youtube"></i></a></li>
+<footer class="container-footer">
+  <div  >
+      <h3>Seguinos</h3>
+      <ul class="redes">
+          <li><a href="https://www.instagram.com/maismaalmacensaludable/?hl=es"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/maismaalmacensaludable/"><i class="fa-brands fa-facebook"></i></a></li> 
+          <li><a href="https://www.youtube.com/c/BiiAlab"><i class="fa-brands fa-youtube"></i></a></li>
+  </div>
+  <hr>
+  <h4>Copyrigth 2022 - Grace </h4>
+</footer>
+<!-- FIN PIE DE PAGINA -->
 
-        </div>
-        <hr>
-        <h4>Copyrigth 2022 - Grace </h4>
-                      
-    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>
