@@ -7,11 +7,21 @@
     box-sizing: border-box;
 }
 
+//maps
+$paleta:(
+    'uno':#ffffff,
+    'dos':#60abae,
+    'tres':#9fccce,
+    'cuatro':#b7d251,
+    'cinco':#aaaaaa,
+);
+
 //variables de color
-$colorprimario: #60abae;
-$colorsecundario: #9fccce;
-$colorheader: #b7d251;
-$colorblanco: #ffffff;
+$colorprimario: map-get($map:$paleta ,$key:'dos');
+$colorsecundario: map-get($map:$paleta ,$key:'tres');
+$colorheader: map-get($map:$paleta ,$key:'cuatro');
+$colorblanco: map-get($map:$paleta ,$key:'uno');
+$colorgris: map-get($map:$paleta ,$key:'cinco');
 
 //variables de tipografía
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Merriweather:wght@300&family=Nunito+Sans:wght@200&display=swap');
