@@ -20,13 +20,15 @@
 
 <body>
     
+ 
+
     <header id="header" class="bgVerdeManzana headerIndex">
         <div><a href="index.html">
-            <img src="img/logo nuevo.png" alt="Logo de Vivir Bien" width="10%" height="10%"></a>
+            <img class="logo" src="img/logo nuevo.png" alt="Logo de Vivir Bien" width="200px" height="auto"></a>
         </div>
      
 <!-- NAVEGACION -->
-<nav class="navbar navbar-expand-lg navbar-light bgVerdeOscuro">
+<nav  style="text-align:space-evenly" class="navbar navbar-expand-lg navbar-light bgVerdeOscuro">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -52,33 +54,70 @@
           </li>
         </div>
     </div>
-  </nav>   
+  </nav>  
+
     </header>
-    
-    <main> 
+        <main> 
         <h1>Tu camino al bienestar</h1>
-        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima quasi quidem nesciunt. Magni dolores, ratione cumque provident ipsa, facere obcaecati tenetur dolor quidem fugiat tempore dignissimos consequuntur iste veniam corporis?</p>
+        <p> Pequeños cambios en tu vida te llevaran hacia la plenitud </p>
     </main>
 
-<!-- Comienza carousel -->
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="img/diseño pagina Web.jpg" class="d-block w-100" alt="Imagen de Bienestar">
+    <!-- Comienza Carrousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
       </div>
-      <div class="carousel-item">
-        <img src="img/diseño pagina Web1.jpg" class="d-block w-100" alt="Imagen de Bienestar">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/mujer_med_abismo.jpg" class="d-block w-100 alt="Imagen de Mujer meditando al sol en hermoso paisaje">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Mejora en cuerpo y mente</h5>
+            <h2 style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Alcanza la plenitud en tu vida</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/mujer_meditando.jpg" class="d-block w-100" alt="Mujer meditando en sembradio de trigo con vista a un abismo">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Medita a diario</h5>
+            <h2 style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Aumenta las emociones positivas y el nivel de satisfacción con nuestra vida, a la vez que disminuye el estrés, la ansiedad y la depresión</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/comida.jpg" class="d-block w-100" alt="Imagen de una mujer cocinando comida saludable">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Alimenta tu cuerpo, nutre tu alma</h5>
+            <h2 style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Valora y cuida tu cuerpo Come sano, toma abundante agua y elimina las toxinas</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/familia.jpg" class="d-block w-100" alt="Imagen de una familia sonriente">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Crea y fomenta vínculos sanos</h5>
+            <h2 style="color: white; text-shadow: black 0.1em 0.1em 0.2em">El vínculo afectivo es un lazo de amor, empatía y cuidado mutuo que proporciona bienestar y seguridad y es la base y el motor del desarrollo de los seres humanos.</h2>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/manos_arriba.jpg" class="d-block w-100" alt="Imagen con manos arriba y energia entre ellas">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color: white; text-shadow: black 0.1em 0.1em 0.2em">El Bienestar esta al alcance de tus manos</h5>
+            <h2 style="color: white; text-shadow: black 0.1em 0.1em 0.2em">Te damos las herramientas para alcanzarlo</h2>
+          </div>
+        </div>
       </div>
-      <div class="carousel-item">
-        <img src="img/diseño pagina Web3.jpg" class="d-block w-100" alt="Imagen de Bienestar">
-      </div>
-      <div class="carousel-item">
-        <img src="img/diseño pagina Web6.jpg" class="d-block w-100" alt="Imagen de Bienestar">
-      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-  </div>
 
-<!-- Fin carousel -->
 
     <div>
 <!-- NOTAS DE INTERES -->
@@ -86,21 +125,14 @@
               
         <div id="nota1-index" class="containerArticulos">
                 <h2>Las terapias alternativas</h2>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil eligendi, repudiandae nisi assumenda ipsa aliquam, culpa similique architecto laudantium velit error. Saepe similique nostrum, harum reprehenderit earum officiis. Eligendi, animi!</p>
+                <p> El termino "terapia alternativa" generalmente se usa para describir cualquier tratamiento medico o intervención que no ha sido documentado o identificado científicamente como seguros o efectivos para una condición o enfermedad especifica. La terapia alternativa abarca una variedad de disciplinas que incluyen desde la dieta y ejercicios hasta las condiciones mentales y cambios del estilo de vida. Algunos ejemplos son la acupunctura, el uso de imágenes guiadas, la quiropráctica, el yoga, la hipnosis, el biofeedback, la aromaterapia, la relajación, remedios herbales, masaje, o muchos otros.</p>
         </div>
 
         <div id="nota2-index" class="containerArticulos">
                            
                 <h2> La importancia de dormir bien</h2>
-                <p> El sueño no es sólo un bloque de tiempo en el que
-                    usted no está despierto. Gracias a los estudios
-                    sobre el sueño realizados en las últimas décadas,
-                    ahora se sabe que el sueño tiene distintas etapas que
-                    progresan cíclicamente durante la noche. El cerebro se
-                    mantiene activo durante el sueño. Sin embargo, suceden
-                    diferentes cosas durante cada etapa. Por ejemplo, ciertas etapas son necesarias para ayudarle a sentirse descansado y con energía al día siguiente, y otras etapas lo
-                    ayudan a aprender y crear recuerdos. </p>
-            
+                <p> El sueño no es sólo un bloque de tiempo en el que usted no está despierto. Gracias a los estudios sobre el sueño realizados en las últimas décadas, ahora se sabe que el sueño tiene distintas etapas que progresan cíclicamente durante la noche. El cerebro se mantiene activo durante el sueño. Sin embargo, suceden diferentes cosas durante cada etapa.</p>
+                <p> Dormir le da al cuerpo y al cerebro tiempo para recuperarse del estrés del día. Después de una buena noche de sueño, usted se desempeña mejor y es mejor para tomar decisiones. Dormir lo ayuda a sentirse más alerta, optimista y a tener una mejor relación con las personas. </p>
         </div>
        
 <!-- PUBLICIDAD -->
@@ -109,34 +141,6 @@
         </div>
     </section>
     
-<!-- FORMULARIO -->
-    <div class="bgVerdeManzana">
-        <h3>Tienes alguna sugerencia?</h3>
-        <p class="formulario">Por favor completa este formulario para ayudarnos a crecer o simplemente para decir hola. Cualquier cosa que tengas para decir es bienvenida, así que no lo dudes y déjame un mensaje. Estaré feliz de contestarte!</p>
-        <form class= "fontDancing">
-            <Fieldset class="formulario">
-                <p class="fontNunito tp.medium"><input type="Nombre" name="Nombre" placeholder="Nombre Completo"></p>
-                <p><input type="email" name="email" placeholder="Correo Electrónico"></p>
-                <p><input type="text" name="Envianos tus sugerencias" placeholder="Envianos tus sugerencias"></p>
-                          
-            <fieldset id="ocultar">
-            <legend class="fontMerri tp-small">Quiero suscribirme al newsletter y recibir información sobre:</legend>
-                <p class="checkFormulario">
-                    <label><input type="checkbox" name="Movimiento"> Aromaterapia</label>
-                    <label><input type="checkbox" name="Rutinas de Bienestar"> Ayurveda</label>
-                    <label><input type="checkbox" name="Alimentación Saludable"> Alimentación Saludable</label>
-                    <label><input type="checkbox" name="Mente Sana"> Mente Sana</label>
-                    <label><input type="checkbox" name="Ecología"> Ecología</label>
-                </p>
-            </fieldset>
-           
-                <div class="fontNunito"> 
-                    <input type="submit" value="Enviar mensaje">
-                    <input type="reset" value="Lo haré mas adelante">
-                </div>
-        </form>
-    </div>
-
 <!--PIE DE PAGINA-->
 <footer class="container-footer">
   <div  >
@@ -148,10 +152,11 @@
           
   </div>
  <hr>
-  <h4>Copyrigth 2022 - Grace </h4>
+  <h4>Copyrigth 2022 - CoderGrey </h4>
 </footer>
 <!-- FIN PIE DE PAGINA -->
-
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    </body>
+   
+  </body>
 </html>

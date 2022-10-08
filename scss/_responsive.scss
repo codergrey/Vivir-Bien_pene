@@ -154,11 +154,25 @@
 
     /* responsive de recetas */
     @media (max-width:1024px){
-    #containerRecetas{
-    flex-direction: column;
+    #videoReceta{
+    flex-direction:colum;
     }
+    
     #containerAddress{
     flex-direction: column;
     text-align: center;
     }
-    }
+}
+
+    @media screen and (max-width:768px){
+        .foto_cabecera2 {
+               display: none;
+        }
+        .foto_cabecera3 {
+               display: block;
+        }
+
+}
+
+
+    

@@ -1,10 +1,9 @@
 /* etiquetas footer */
 
 .container-footer{
-    display:flex;
+    @extend %fondodeg;
     flex-direction: column;
-    width: 100%;
-    background: linear-gradient(to top, $colorheader,$colorprimario);
+    
 }
 
 .redes{

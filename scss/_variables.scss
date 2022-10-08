@@ -149,3 +149,12 @@ p{
     font-family: $font-p;
     font-size: $textSm;
 }
+
+@mixin box-gral ($alcont, $justcont, $bg){
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid map-get($map:$paleta, $key:'cuatro');
+    background-color:$bg;
+    align-content: $alcont;
+    justify-content: $justcont;
+} 
